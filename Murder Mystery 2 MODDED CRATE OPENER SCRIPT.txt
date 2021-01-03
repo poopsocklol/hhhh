@@ -1,0 +1,9 @@
+for x = 1, 10 do -- Change 10 to the amount of crates you want to open | Change the "1" to the amount of seconds you want it to take until it opens another Crate
+local args = {
+   [1] = "Boxnamehere" -- KnifeBox1, KnifeBox2, KnifeBox3, KnifeBox4, KnifeBox5, MLGBox (there are more boxes like custom boxes just load a remotespy get the name of the box and replace it with that)
+}
+
+game:service'ReplicatedStorage'.Remotes.Shop.OpenCrate:InvokeServer(unpack(args))
+wait()
+game:service'ReplicatedStorage'.CrateComplete:FireServer()
+end

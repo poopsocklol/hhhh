@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/coastss/coasts-scripts/main/bloxburg_autofarm.lua"))()
